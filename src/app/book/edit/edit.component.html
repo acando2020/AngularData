@@ -1,0 +1,39 @@
+<ng-template #content let-modal>
+    <div class="modal-header header-color">
+        <h4 class="modal-title" id="modal-basic-title">Registrar Libro</h4>
+        <button type="button" class="btn-close btn-close-white" aria-label="Close"
+            (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="container">
+        <h2>Crear Libros</h2>
+        <form style="padding: 10px">
+            <div class="form-group">
+                <label for="">Nombre Libro:</label>
+                <input type="text" formControlName="namebook" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">Descripcion Libro:</label>
+                <input type="text" formControlName="descriptionbook" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">Autor Libro:</label>
+                <input type="text" formControlName="authorbook" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">Fecha Publicada Libro:</label>
+                <input type="date" formControlName="datepublishbook" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">Numero Libro:</label>
+                <input type="number" formControlName="numberbook" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">Precio Libro:</label>
+                <input type="text" formControlName="pricebook" class="form-control">
+            </div>
+            <button class="btn btn-primary">Guardar</button>
+        </form>
+    </div>
+</ng-template>
+
+<br>
